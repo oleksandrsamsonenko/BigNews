@@ -2,10 +2,10 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://oleksandrsamsonenko.github.io/Big-News",
+  "homepage": "https://oleksandrsamsonenko.github.io/BigNews",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /Big-News/"
+    "build": "parcel build src/*.html --public-url /BigNews/"
   },
   "repository": {
     "type": "git",
