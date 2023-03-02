@@ -1,0 +1,123 @@
+.read-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 28px;
+  margin-bottom: 40px;
+
+  @media screen and (min-width: $tablet) {
+    flex-basis: calc((100% - 30px) / 2);
+    margin-top: 30px;
+    margin-bottom: 48px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    flex-basis: calc((100% - 2 * 32px) / 3);
+    margin-top: 40px;
+    margin-bottom: 60px;
+  }
+}
+
+.read-box-inner {
+  display: flex;
+  align-items: center;
+  margin-bottom: 28px;
+
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: $lineColor;
+  }
+}
+
+.read-date {
+  width: 83px;
+
+  @media screen and(min-width: $tablet) {
+    width: 87px;
+  }
+
+  font-family: 'Poppins';
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.02em;
+}
+
+.read-btn {
+  display: block;
+  width: 36px;
+  height: 36px;
+  border: none;
+  background-color: transparent;
+  position: relative;
+}
+
+.read-btn.roll-up::after {
+  content: '';
+  display: block;
+  top: 50%;
+  right: 8px;
+  width: 15px;
+  height: 9px;
+  transform: translateY(-50%);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='9' fill='none'%3E%3Cpath fill='%23111321' d='M1.762 9 0 7.287 7.5 0 15 7.287 13.238 9 7.5 3.437 1.763 9Z'/%3E%3C/svg%3E");
+  pointer-events: none;
+  position: absolute;
+}
+
+.read-btn.roll-down::after {
+  content: '';
+  display: block;
+  top: 50%;
+  right: 8px;
+  width: 15px;
+  height: 9px;
+  transform: translateY(-50%);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='9' fill='none'%3E%3Cpath fill='%23111321' d='M1.762 0 0 1.713 7.5 9 15 1.713 13.238 0 7.5 5.563 1.763 0Z'/%3E%3C/svg%3E");
+  pointer-events: none;
+  position: absolute;
+}
+
+.read-item {
+  @media screen and(max-width: $mobileMax) {
+    max-width: 288px;
+  }
+
+  @media screen and(min-width: $tablet) {
+    max-width: 353px;
+  }
+
+  @media screen and(min-width: $desktop) {
+    max-width: 395px;
+  }
+
+  position: relative;
+}
+
+.overlay-read-text {
+  display: flex;
+  position: absolute;
+  color: rgba(0, 221, 115, 1);
+  font-family: $mainFF;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.35;
+  padding-left: 203px;
+  padding-top: 14px;
+  @media screen and (min-width: 768px) {
+    padding-left: 268px;
+    padding-top: 20px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-left: 300px;
+    padding-top: 16px;
+  }
+}

@@ -1,0 +1,87 @@
+<header class="header section">
+  <div class="container header__container">
+    <a class="logo" href="/src/index.html">News</a>
+    <nav class="header__nav" id="main-nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link nav__link--current" href="./index.html">Home</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="./favorite.html">Favorite</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="./read.html">Read</a>
+        </li>
+      </ul>
+    </nav>
+    <div>
+      <form class="search-form" id="search-form">
+        <button class="submit__btn__style" type="submit">
+          <div>
+            <svg
+              class="lupa svg__light__theme lupa__theme"
+              width="20"
+              height="19"
+            >
+              <use href="./img/symbol-defs.svg#icon-lupa"></use>
+            </svg>
+          </div>
+        </button>
+        <input
+          class="nav__input search-input input__light__theme input__theme"
+          type="text"
+          name="searchQuery"
+          autocomplete="off"
+          placeholder="Search  |"
+        />
+      </form>
+      <button
+        class="menu-toggle js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg
+          class="burger svg__light__theme menu__theme"
+          width="24"
+          height="24"
+        >
+          <use href="./img/symbol-defs.svg#icon-menu"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="toggle__box toggle__box__large">
+      <svg
+        class="icon-tablet toggle__sun__theme svg__sun"
+        width="21"
+        height="21"
+      >
+        <use class="png-sun" href="./img/symbol-defs.svg#icon-sun"></use>
+      </svg>
+      <svg
+        class="icon-decktop toggle__light__theme svg__light"
+        width="43"
+        height="24"
+      >
+        <use class="png-sun" href="./img/symbol-defs.svg#icon-light"></use>
+      </svg>
+      <label class="switch">
+        <input class="toggle" type="checkbox" />
+        <span class="slider round"></span>
+      </label>
+      <svg
+        class="icon-tablet toggle__moon__theme svg__moon"
+        width="21"
+        height="21"
+      >
+        <use class="png-moon" href="./img/symbol-defs.svg#icon-moon"></use>
+      </svg>
+      <svg
+        class="icon-decktop toggle__dark__theme svg__dark"
+        width="41"
+        height="24"
+      >
+        <use class="png-moon" href="./img/symbol-defs.svg#icon-dark"></use>
+      </svg>
+    </div>
+  </div>
+</header>
